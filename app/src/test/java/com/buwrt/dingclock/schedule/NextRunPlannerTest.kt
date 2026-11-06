@@ -127,11 +127,11 @@ class NextRunPlannerTest {
     fun `random delay stays within bounds`() {
         val base = settings().copy(randomDelaySeconds = 60)
         repeat(20) {
-            val slot = NextRunPlanner.nextSlot(base, at(6, 3, 8, 0))
+            val picked = NextRunPlanner.nextSlot(base, at(6, 3, 8, 0))!!
             val earliest = at(6, 3, 9, 0)
             val latest = at(6, 3, 9, 1)
-            assertTrue(slot!!.at.toInstant() >= earliest.toInstant())
-            assertTrue(slot.at.toInstant() <= latest.toInstant())
+            assertTrue(picked.at.toInstant() >= earliest.toInstant())
+            assertTrue(picked.at.toInstant() <= latest.toInstant())
         }
     }
 }
