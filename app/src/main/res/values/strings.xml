@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">钉钉自动打卡</string>
+    <string name="channel_status">自动打卡</string>
+    <string name="channel_result">打卡结果</string>
+</resources>

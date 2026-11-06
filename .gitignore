@@ -1,0 +1,28 @@
+# Build output
+.gradle/
+build/
+app/build/
+mock/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration
+local.properties
+*.jks
+*.keystore
+keystore.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Temporary files
+.tmp/
+repo.json
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
